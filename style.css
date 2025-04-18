@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.upper-site{
+    background-color: #768a96;
+}
+
+/*nav*/
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.nav-logo h2{
+    text-align: center;
+    height: 150px;
+    padding-top: 50px;
+    color: #dfebf6;
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 24px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20vh;
+    color: #dfebf6;
+}
+
+.welcome p{
+    font-size: 18px;
+}
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+
+  /* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:35vh;
+    }
+  }
+
+
+.about{
+  text-align: center;
+  padding-top: 20vh;
+  font-size: 24px;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 20vh;
+  color: #dfebf6;
+}
+
+.about p{
+  font-size: 18px;
+}
+
+.bottom-site{
+  background-color: rgb(68,87,109);
+  height: 100vh;
+}
+.card{
+  position: absolute;
+  height: 210px;
+  width: 330px;
+
+  z-index: 1;
+  
+  background: linear-gradient(248.93deg, rgba(255, 255, 255, 0.552) 0.59%, rgba(255, 255, 255, 0.345) 99.14%);
+  border: 0.5px solid #3B5E2F;
+  box-shadow: -3px 3px 2px rgba(171, 216, 181, 0.13);
+  border-radius: 10px;
+}
