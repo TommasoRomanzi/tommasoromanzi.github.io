@@ -93,33 +93,27 @@ a {
   }
 
 
-.about{
+.about, .academics{
   text-align: center;
   padding-top: 20vh;
   font-size: 24px;
   padding-left: 30%;
   padding-right: 30%;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   color: #dfebf6;
 }
 
 .about p{
   font-size: 18px;
 }
+.academics p{
+  font-size: 18px;
+}
+.academics a{
+  text-decoration: none;
+  color: #dfebf6;
+}
 
 .bottom-site{
   background-color: rgb(68,87,109);
-  height: 100vh;
-}
-.card{
-  position: absolute;
-  height: 210px;
-  width: 330px;
-
-  z-index: 1;
-  
-  background: linear-gradient(248.93deg, rgba(255, 255, 255, 0.552) 0.59%, rgba(255, 255, 255, 0.345) 99.14%);
-  border: 0.5px solid #3B5E2F;
-  box-shadow: -3px 3px 2px rgba(171, 216, 181, 0.13);
-  border-radius: 10px;
 }
