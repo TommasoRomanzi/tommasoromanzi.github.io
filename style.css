@@ -10,7 +10,7 @@ html {
 }
 
 .upper-site{
-    background-color: #768a96;
+    background-color: #262626;
 }
 
 /*nav*/
@@ -36,7 +36,7 @@ a {
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 20vh;
-    color: #dfebf6;
+    color: #dce6e2;
 }
 
 .welcome p{
@@ -115,5 +115,5 @@ a {
 }
 
 .bottom-site{
-  background-color: rgb(68,87,109);
+  background-color: #0D0D0D;
 }
