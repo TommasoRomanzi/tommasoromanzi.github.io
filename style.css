@@ -114,6 +114,62 @@ a {
   color: #dfebf6;
 }
 
+/*Bottone*/
+.bottone{
+    opacity: 1;
+    margin: 10px;
+    outline: 0;
+    color: #ffffff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    
+    &:hover{
+      
+      &:after{
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+      
+      &:before{
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+    }
+    
+    &:after{
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color: #034028;
+      display: block;
+      transition-duration: 0.5s;;
+      position: absolute;
+      background: #7dedc0;
+      content: attr(data-back);
+      transform: translateY(-50%) rotateX(90deg);
+    }
+    
+    &:before{
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color: #ffffff;
+      display: block;
+      padding: 0 30px;
+      line-height: 40px;
+      transition-duration: 0.5s;
+      position: relative;
+      background: #034028;
+      content: attr(data-front);
+      transform: translateY(0) rotateX(0);
+    }
+}
+
 .bottom-site{
   background-color: #0D0D0D;
 }
